@@ -11,6 +11,49 @@ nav { display: flex; justify-content: space-between; padding: 20px 5%; backgroun
 .nav-links a { margin: 0 15px; text-decoration: none; color: var(--dark); font-weight: bold; }
 .search-bar input { padding: 8px; border: 1px solid #ccc; border-radius: 20px; outline: none; }
 
+
+
+/* Card ke andar image ki styling */
+.product-image-container {
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.product-image-container img {
+    transition: transform 0.5s ease; /* Image zoom animation */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Hover karne par image halki si zoom hogi */
+}
+
+.price {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.buy-btn {
+    background: var(--dark);
+    color: white;
+    border: 1px solid var(--dark);
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.buy-btn:hover {
+    background: transparent;
+    color: var(--dark);
+}
+
+
+
+
 /* Animations */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }

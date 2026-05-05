@@ -8,6 +8,7 @@ app.use(express.static('public'));
 // Mock Data
 const products = [
     { name: 'Gold Diamond Ring', category: 'ring', price: '$450', img: 'ring.jpg' },
+    { name: 'Elegant Pearl Ring', category: 'ring', price: '$300', img: 'bracelet.jpg' },
     { name: 'Silver Necklace', category: 'necklace', price: '$200', img: 'necklace.jpg' },
     { name: 'Pearl Earrings', category: 'earring', price: '$150', img: 'earring.jpg' },
     { name: 'Crystal Bracelet', category: 'bracelet', price: '$120', img: 'bracelet.jpg' },
