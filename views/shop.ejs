@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Shop <%= category %></title>
+</head>
+<body>
+    <nav>
+        <div class="logo">LUXE</div>
+        <div class="nav-links"><a href="/">Back Home</a></div>
+    </nav>
+
+    <h2 style="text-align:center; margin-top:40px;">Viewing: <%= category || 'All Collection' %></h2>
+
+    <div class="product-grid">
+        <% products.forEach(product => { %>
+            <div class="card animate">
+                <div style="height:200px; background:#eee; margin-bottom:15px;"></div> <!-- Placeholder for Image -->
+                <h4><%= product.name %></h4>
+                <p><%= product.price %></p>
+                <button style="background:var(--dark); color:white; border:none; padding:10px 20px; cursor:pointer;">View Item</button>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
