@@ -9,9 +9,9 @@ app.use(express.static('public'));
 const products = [
     { name: 'Gold Diamond Ring', category: 'ring', price: '$450', img: 'ring.jpg' },
     { name: 'Elegant Pearl Ring', category: 'ring', price: '$300', img: 'bracelet.jpg' },
-    { name: 'Silver Necklace', category: 'necklace', price: '$200', img: 'necklace.jpg' },
+    { name: 'Silver Necklace', category: 'necklace', price: '$200', img: 'necklace1.webp' },
     { name: 'Pearl Earrings', category: 'earring', price: '$150', img: 'earring.jpg' },
-    { name: 'Crystal Bracelet', category: 'bracelet', price: '$120', img: 'bracelet.jpg' },
+    { name: 'Crystal Bracelet', category: 'bracelet', price: '$120', img: 'bracelet1.webp' },
     { name: 'Dream Catcher Pendant', category: 'catcher', price: '$80', img: 'catcher.jpg' },
     { name: 'Luxury Watch', category: 'watch', price: '$500', img: 'watch.jpg' },
     // { name: 'Diamond Stud Earrings', category: 'earring', price: '$300', img: 'earring2.jpg' },
