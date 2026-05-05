@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Luxe Jewelry | Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">LUXE</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About</a>
+        </div>
+        <form action="/shop" method="GET" class="search-bar">
+            <input type="text" name="category" placeholder="Search (e.g. ring)...">
+        </form>
+    </nav>
+
+    <section class="hero animate">
+        <h1>Timeless Elegance Defined</h1>
+    </section>
+
+    <div class="card-container">
+        <% ['necklace', 'bracelet', 'earring', 'ring', 'catcher'].forEach(item => { %>
+            <a href="/shop?category=<%= item %>" class="card animate">
+                <h3><%= item.toUpperCase() %></h3>
+                <p>Explore Collection</p>
+            </a>
+        <% }) %>
+    </div>
+</body>
+</html>
